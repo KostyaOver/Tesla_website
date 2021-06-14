@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/fake.css">
+    <title>Fake</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item text">
+            <img src="./img-main/back.svg" alt="">
+            <div class="text-container">
+                <h2>Oops!  It’s a fake</h2>
+                <p>This site is just a graduation project. Have questions? Send a letter to this email <a href="mailto:hisiliconkirin@gmail.com">hisiliconkirin@gmail.com</a></p>
+            </div>            
+        </div>
+        <div class="item img">
+            
+        </div>
+    </div>
+    <script>
+        let back = document.querySelector('img');
+        back.addEventListener('click', function(){
+            history.back();
+        });
+    </script>
+</body>
+</html>

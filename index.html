@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/animate.min.css">
+    <link rel="stylesheet" href="./styles/main-style.css">
+    <title>Main</title>
+</head>
+<body>
+    <div class="smooth">     
+        <div class="header">
+            <img id="menu" value="close" src="./img-main/burger-menu-white.png" alt="">
+            <ul>
+                <li><a href="#one">MODEL S</a></li>
+                <li><a href="#two">MODEL 3</a></li>
+                <li><a href="index.html"><img id="logo" src="./img-main/icon-white.svg" alt="logo"></a></li>
+                <li><a href="#three">MODEL X</a></li>
+                <li><a href="#four">MODEL Y</a></li>
+            </ul>
+            <a id="sign" href="https://auth.tesla.com/oauth2/v1/authorize?client_id=teslaweb&response_type=code&scope=openid%20email%20profile&redirect_uri=https%3A//www.tesla.com/openid-connect/generic&state=M0omqWnZ4s3gITd6M1qdZ3J1wMwcAHegtqeD_OCqABg&locale=en-US">SIGN IN</a>
+        </div>
+        <div id="sideBar" class="sideHide animate__animated animate__fadeOutLeft">
+            <ul>
+                <li><a href="https://ru.wikipedia.org/wiki/Tesla">About Tesla</a></li>
+                <li><a href="./fake.html">It's a fake </a></li>
+                <li><a href="https://www.instagram.com/kostya_over/?hl=ru">Instagram</a></li>
+            </ul>
+        </div>
+        <section id="one">
+            
+                <div class="title animate__animated animate__fadeInUp">
+                    <h1>Model S</h1>
+                    <p>Order Online for <a href="https://www.tesla.com/support/taking-delivery?redirect=no">Touchless Delivery</a></p>
+                </div>
+
+                <div class="buttons animate__animated animate__fadeInUp">
+                    <div class="button order">
+                        <a href="./model-s-conf.html">CUSTOM ORDER</a>
+                    </div>
+                    <div class="button read">
+                        <a href="model-s.html">READE MORE</a>
+                    </div>
+                </div>
+           
+        </section>
+
+        <section id="two">
+            <div class=" title wow animate__animated animate__fadeInUp">
+                <h1>Model 3</h1>
+            </div>
+
+            <div class=" buttons wow animate__animated animate__fadeInUp">
+                <div class="button order">
+                    <a href="./model-3-conf.html">CUSTOM ORDER</a>
+                </div>
+                <div class="button read">
+                    <a href="./model-3.html">READE MORE</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="three">
+            <div class="title wow animate__animated animate__fadeInUp">
+                <h1>Model X</h1>
+            </div>
+
+            <div class="buttons wow animate__animated animate__fadeInUp">
+                <div class="button order">
+                    <a href="./model-x-conf.html">CUSTOM ORDER</a>
+                </div>
+                <div class="button read">
+                    <a href="./model-x.html">READE MORE</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="four">
+            <div class="title wow animate__animated animate__fadeInUp">
+                <h1>Model Y</h1>
+            </div>
+
+            <div class="buttons wow animate__animated animate__fadeInUp">
+                <div class="button order">
+                    <a href="./model-y-conf.html">CUSTOM ORDER</a>
+                </div>
+                <div class="button read">
+                    <a href="./model-y.html">READE MORE</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./scripts/wow.min.js"></script>
+    <script src="./scripts/main-script.js"></script>
+    <script>
+        var wow = new WOW({ scrollContainer: ".smooth"});
+        wow.init();
+    </script>
+</body>
+</html>

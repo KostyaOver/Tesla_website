@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/animate.min.css">
+    <link rel="stylesheet" href="./styles/model-conf.css">
+    <title>Model X Configurator</title>
+</head>
+<body>
+    <div class="block-view">
+        <div class="header">
+            <div class="title">
+                <h2><a href="./index.html">Tesla</a></h2>
+                <h1>Model X</h1>
+            </div>
+
+            <div class="total-price">
+                <p><span>$83,190</span> Pusrchase price</p>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <img class="animate__animated" src="" alt="">
+            </div>
+            <p class="slider-btn" id="left"><img src="./img-config/left.svg" alt=""></p>
+            <p class="slider-btn" id="right"><img src="./img-config/right.svg" alt=""></p>
+        </div>
+        
+    </div>
+
+    <div class="block-scroll">
+        <section class="fields">
+            <h2>Details</h2>
+            <div class="list">
+                <div class="li">
+                    <h2>360 mi</h2>
+                    <p>Range (est.)</p>
+                </div>
+                <div class="li">
+                    <h2>155 mph</h2>
+                    <p>Top spead</p>
+                </div>
+                <div class="li">
+                    <h2>3.8 s</h2>
+                    <p>0 - 60 mph</p>
+                </div>
+            </div>
+ 
+            <p>Dual Motor All-Wheel Drive</p>
+            <div class="field" data-alt="360 mi/155 mph/3.8 sec" data-price="83190" data-value="Long Range" data-prop="type" data-index="0" onclick="func(event)">
+                <p>Long Range</p>
+                <p>$83,190</p>
+            </div>
+ 
+            <p>Tri Motor All-Wheel Drive</p>
+            <div class="field active" data-alt="340 mi/163 mph/2.5 sec" data-price="113190" data-value="Plade" data-prop="type" data-index="1" onclick="func(event)">
+                <p>Plaid</p>
+                <p>$113,190</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Paint</h2>
+            <div class="colors">
+                <div id="white-paint" class="color active" data-alt="Pearl White Multi-Coat <span>Included</span>" data-price="0" data-value="white" data-prop="paint" data-index="0" onclick="func(event)"></div>
+                <div id="black-paint" class="color" data-alt="Solid Black <span>$1,000</span>" data-price="1000" data-value="black" data-prop="paint" data-index="1" onclick="func(event)"></div>
+                <div id="gray-paint" class="color" data-alt="Midnight Silver Metallic <span>$1,000</span>" data-price="1000" data-value="grey" data-prop="paint" data-index="2" onclick="func(event)"></div>
+                <div id="red-paint" class="color" data-alt="Deep Blue Metallic <span>$1,000</span>" data-price="1000" data-value="red" data-prop="paint" data-index="3" onclick="func(event)"></div>
+                <div id="blue-paint" class="color" data-alt="Red Multi-Coat <span>$2,000</span>" data-price="2000" data-value="blue" data-prop="paint" data-index="4" onclick="func(event)"></div>
+            </div>
+            <p class="color-description">Pearl White Multi-Coat  <span>Included</span></p>
+        </section>
+
+        <section>
+            <h2>Wheels</h2>
+            <div class="wheels">
+                <img class="wheel active" src="./img-config/model-x/wheel-1.png" data-alt="20' Cyberstream Wheels <span>Included</span>" data-price="0" data-prop="wheels" data-value="wheel-1"  data-index="0" onclick="func(event)">
+                <img class="wheel" src="./img-config/model-x/wheel-2.png" data-alt="22' Turbine Wheels <span>$5,500</span>" data-price="5500" data-prop="wheels" data-value="wheel-2" data-index="1" onclick="func(event)">
+            </div>
+            <p class="wheels-description">20' Cyberstream Wheels <span>Included</span></p>
+        </section>
+
+        <section>
+            <h2>Interior</h2>
+            <div class="colors-interior">
+                <div id="white-interior" class="color active" data-alt="All Black <span>Included</span>" data-price="0" data-value="white" data-prop="interior" data-index="0" onclick="func(event)"></div>
+                <div id="black-interior" class="color" data-alt="Black and White <span>$2,000</span>" data-price="2000" data-value="black" data-prop="interior" data-index="1" onclick="func(event)"></div>
+                <div id="pink-interior" class="color" data-alt="Cream <span>$2,000</span>" data-price="2000" data-value="beige" data-prop="interior" data-index="2" onclick="func(event)"></div>
+            </div>
+            <p class="interior-description">All Black <span>Included</span></p>
+        </section>
+
+        <section>
+            <h2>Seating Layout</h2>
+            <div class="seats">
+                <div class="seat active" data-alt="Five Seats <span>Included</span>" data-price="0" data-value="5" data-prop="seats" data-index="0" onclick="func(event)">5</div>
+                <div class="seat" data-alt="Six Seats <span>$6,500</span>" data-price="6500" data-value="6" data-prop="seats" data-index="1" onclick="func(event)">6</div>
+                <div class="seat" data-alt="Seven Seats <span>$3,500</span>" data-price="3500" data-value="7" data-prop="seats" data-index="2" onclick="func(event)">7</div>
+            </div>
+            <p class="seats-description">Five Seats <span>Included</span></p>
+        </section>
+
+        <section class="autopilot">
+            <h2>Full Self-Driving Capability</h2>
+            <p>$10,000</p>
+            <ul>
+                <li>Navigate on Autopilot</li>
+                <li>Auto Lane Change</li>
+                <li>Autopark</li>
+                <li>Summon</li>
+                <li>Full Self-Driving Computer</li>
+                <li>Traffic Light and Stop Sign Control</li>                
+            </ul>
+            <p>Coming later this year</p>
+            <ul>
+                <li>Autosteer on city street</li>
+            </ul>
+            <p class="button" id="autopilot" href="" data-active="active">ADD</p>
+        </section>
+        
+        <section>
+            <h2>Order Your Model X</h2>
+            <p>Estimated Delivery: January-February</p>
+            <div class="button" id="order">CONTINUE TO PAYMENT</div>
+        </section>
+    </div>
+    
+    <div class="popup">
+        <div class="popup-container animate__animated">
+            <div class="pop-header">
+                <h2>Your Model </h2>
+                <img src="./img-main/close.svg" alt="" id="close">
+            </div>
+            <div class="pop-content">
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="btn-container">
+                <a class="button" href="./fake.html">ORDER WITH CARD</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./scripts/wow.min.js"></script>
+    <script>
+        var wow = new WOW({ scrollContainer: ".smooth"});
+        wow.init();
+    </script>
+    <script src="./scripts/conf-car.js"></script>
+</body>
+</html>
